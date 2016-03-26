@@ -1,0 +1,24 @@
+
+    <p>Къде да обядваме?</p>
+
+		<form action='cast' method='post'>
+      <ul class='unstyled'>
+        <% CHOICES.each do |place_id, place_name| %>
+          <li>
+            <label class='radio'>
+              <input type='radio' name='vote' value='<%= place_id %>' id='vote_<%= place_id %>' />
+              <%= place_name %>
+            </label>
+          </li>
+        <% end %>
+      </ul>
+      <button type='submit' class='btn btn-primary'>Гласувай!</button>
+    </form>
+		<p>Или <a href="https://foursquare.com/">потърсете още места</a>.</p>
+		<p>
+			Добър апетит!
+		</p>
+		<a href="http://image.healthil.jp/article/original/18278.jpg" target="_blank" title="Bento Lunch">
+			<img src="http://searchengineland.com/figz/wp-content/seloads/2014/08/panda-eating-ss-1920.jpg" width="300" alt="A photo of a Bento lunch">
+		</a>
+
